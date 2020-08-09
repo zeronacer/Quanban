@@ -16,7 +16,7 @@
     </nav>
     
     <div class="d-flex m-5 justify-content-center">
-        <div class="filler-content-container" v-show="arrFlowlines.length === 0">
+        <div class="filler-content-container" v-show="arrFlowlines.length < 0">
           <h2>Oh nein!</h2>
           <p>Du hast gar keine Flusslinien. Oben rechts kannst du deine Erste erstellen!</p>
         </div>
@@ -28,7 +28,7 @@
     <footer class="footer py-3 bg-light">
       <span class="text-muted">von zeronacer</span>
       <span>|</span>
-      <a href="">Github</a>
+      <a href="https://github.com/zeronacer/Quanban">Github</a>
       <span>|</span>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick" />
@@ -37,7 +37,7 @@
         <img alt="" border="0" src="https://www.paypal.com/de_DE/i/scr/pixel.gif" width="1" height="1" />
       </form>
     </footer>
-    
+
   </div>
 </template>
 
