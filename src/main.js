@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import VueMeta from 'vue-meta'
 import App from './App.vue'
 
 // import bootstrap vue
@@ -10,6 +11,9 @@ Vue.config.productionTip = false
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
+Vue.use(VueMeta, {
+  refreshOnceOnNavigation: true
+})
 
 new Vue({
   render: h => h(App),
