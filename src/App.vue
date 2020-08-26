@@ -27,7 +27,7 @@
 				<h2>Oh nein!</h2>
 				<p>Du hast gar keine Flusslinien. Oben rechts kannst du deine Erste erstellen!</p>
 			</div>
-			<draggable class="d-sm-flex" :list="arrFlowlines" group="flowlines">
+			<draggable handle=".handle" class="d-sm-flex" :list="arrFlowlines" group="flowlines">
 				<Flowline v-for="flowline in arrFlowlines" :key="flowline.name" :title="flowline.name"
 					v-on:delete-flowline="deleteFlowline"></Flowline>
 			</draggable>

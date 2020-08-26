@@ -2,7 +2,7 @@
     <div class="flowline flex-fill m-1">
         <div class="card text-black bg-white">
 
-          <div class="card-header p-2">
+          <div class="card-header p-2 handle">
             <span class="align-text-top">{{ title }}</span>
             <b-button type="button" class="close align-top" aria-label="Close" @click="$emit('delete-flowline', title)">
               <span class="align-text-top" aria-hidden="true">&times;</span>
